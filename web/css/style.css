@@ -1,0 +1,256 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 mar. 2025, 10:55:16
+    Author     : lpere
+*/
+/* Estilo general */
+body {
+    background-color: #000;
+    color: #FFD700;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor del login */
+.login-container {
+    background: rgba(255, 215, 0, 0.1);
+    border: 2px solid #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 320px; /* Ajuste de ancho */
+    box-shadow: 0px 0px 10px #FFD700;
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Título */
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.input-group input {
+    width: 90%; /* Antes estaba en 100% */
+    max-width: 260px; /* Limita el tamaño */
+    padding: 10px;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    background: transparent;
+    color: #FFD700;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/* Botón */
+.btn {
+    background: #FFD700;
+    color: black;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px #FFD700;
+}
+
+/* Links */
+.extra-links {
+    margin-top: 10px;
+}
+
+.extra-links a {
+    color: #FFD700;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mensajes de error */
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    background: black;
+    color: #FFD700;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.input-group textarea {
+    width: 90%; /* Mismo ancho que los inputs */
+    max-width: 260px; /* Limita el tamaño */
+    padding: 10px;
+    border: 1px solid #FFD700 !important; /* Fuerza el borde dorado */
+    border-radius: 5px;
+    background: transparent !important; /* Fuerza el fondo transparente */
+    color: #FFD700 !important; /* Fuerza el texto dorado */
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    resize: vertical; /* Permite redimensionar verticalmente */
+    min-height: 100px; /* Altura mínima */
+}
+/* Estilos para la tabla */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+}
+
+.styled-table thead tr {
+    background-color: rgba(255, 215, 0, 0.1);
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #FFD700;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #FFD700;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: rgba(255, 215, 0, 0.05);
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #FFD700;
+}
+
+/* Estilos para los estados */
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status.used {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: #ff6b6b;
+}
+
+.status.unused {
+    background-color: rgba(0, 255, 0, 0.2);
+    color: #7bed9f;
+}
+
+/* Estilo para el botón secundario */
+.btn-secondary {
+    background: transparent;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 215, 0, 0.1);
+}
+/* Estilos para la lista de códigos */
+.codigos-list {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.codigo-item {
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.codigo-label {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.codigo-value {
+    font-family: monospace;
+    font-size: 18px;
+    color: #FFD700;
+    letter-spacing: 1px;
+}
+
+.no-codigos {
+    text-align: center;
+    color: #FFD700;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.error-message {
+    color: #ff6b6b;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ff6b6b;
+    border-radius: 5px;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
