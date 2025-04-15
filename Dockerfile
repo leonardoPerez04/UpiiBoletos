@@ -1,4 +1,4 @@
-FROM FROM glassfish:5.0
+FROM glassfish:5.0
 
 COPY upiiTicket.war /glassfish5/glassfish/domains/domain1/autodeploy/
 
