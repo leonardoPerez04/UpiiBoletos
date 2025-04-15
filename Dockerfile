@@ -1,6 +1,6 @@
-FROM oracle/glassfish:5.0.1-jdk8
+FROM FROM glassfish:5.0
 
-COPY upiiTicket.war /opt/glassfish5/glassfish/domains/domain1/autodeploy/
+COPY upiiTicket.war /glassfish5/glassfish/domains/domain1/autodeploy/
 
 EXPOSE 8080
 
